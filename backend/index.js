@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import routes from './src/routes/yachtRoutes';
@@ -12,6 +13,9 @@ mongoose.connect('mongodb://localhost/SailingLife');
 
 // Bodyparser setup
 app.use(bodyParser.urlencoded({extended: true}));
+
+// Cors
+app.use(cors());
 
 routes(app);
 

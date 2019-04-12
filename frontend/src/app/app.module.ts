@@ -1,23 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
+
+// HttpClient module
+import { HttpClientModule } from '@angular/common/http';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
+// Routing module
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { YachtsComponent } from './yachts.component';
+
+// Components
+import { YachtListComponent } from './yacht-list/yacht-list.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    YachtsComponent
+    YachtListComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     NgbModule
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
