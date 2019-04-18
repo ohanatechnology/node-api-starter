@@ -13,7 +13,6 @@ import { AppRoutingModule } from './app-routing.module';
 // Components
 import { YachtListComponent } from './yacht-list/yacht-list.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,

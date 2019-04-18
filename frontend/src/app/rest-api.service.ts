@@ -13,7 +13,6 @@ export class RestApiService {
 
   constructor(private http:HttpClient) { }
 
-
  /*========================================
     CRUD Methods for consuming RESTful API
   =========================================*/

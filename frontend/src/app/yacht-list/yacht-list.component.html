@@ -1,12 +1,12 @@
 <div class="container custom-container-2">
 
-  <!-- Show it when there is no employee -->
+  <!-- Show message when there are no yachts -->
   <div class="no-data text-center" *ngIf="Yacht.length == 0">
     <p>There are no yachts</p>
     <button class="btn btn-outline-primary" routerLink="/create-employee">Add Yacht</button>
   </div>
 
-  <!-- Employees list table, it hides when there is no employee -->
+  <!-- Yacht list table, it is not shown when there are no yachts -->
   <div *ngIf="Yacht.length !== 0">
     <h3 class="mb-3 text-center">Yacht List</h3>
 
